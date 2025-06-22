@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route,useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AddPlayerForm from './components/AddPlayerForm';
 import QuizEngine from './components/QuizEngine';
@@ -55,12 +55,13 @@ export default function App() {
 }
 
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="hero">
       <div className="hero-text">
         <h1>Welcome to Quiz Quizzer!</h1>
         <p>Tap . Guess . Win .</p>
-        <button><Link to="/add-player">Start Quiz</Link></button>
+      <button onClick={() => navigate('/add-player')}>Start Quiz</button>
         
       </div>
       <div className="hero-image">
