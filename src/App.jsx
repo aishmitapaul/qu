@@ -60,9 +60,7 @@ function Hero() {
       <div className="hero-text">
         <h1>Welcome to Quiz Quizzer!</h1>
         <p>Tap . Guess . Win .</p>
-        
-        
-          <Link to="/add-player">Start Quiz</Link>
+        <button><Link to="/add-player">Start Quiz</Link></button>
         
       </div>
       <div className="hero-image">
