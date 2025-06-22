@@ -62,6 +62,7 @@ function Hero() {
         <p>Tap . Guess . Win .</p>
         <a href="/add-player">
           <button>Start Quiz</button>
+          <Link to="/add-player">Start Quiz</Link>
         </a>
       </div>
       <div className="hero-image">
