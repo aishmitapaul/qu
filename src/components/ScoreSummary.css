@@ -1,0 +1,47 @@
+.score-summary {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.score-summary h1 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.score-card {
+  background: #ffffff;
+  display: inline-block;
+  padding: 3rem 5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.big-score {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary);
+}
+
+.message {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
+  font-weight: 600;
+}
+
+.score-card button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.score-card button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
